@@ -51,7 +51,8 @@ class MainActivity : AppCompatActivity() {
                 //Complete task
                 newCheckBox.setOnClickListener(object: View.OnClickListener{
                     override fun onClick(v: View?) {
-                        taskLinearLayout.removeView()
+                        taskLinearLayout.removeView(v)
+                        tasks.remove(v)
                     }
                 })
                 taskLinearLayout.addView(newCheckBox)
