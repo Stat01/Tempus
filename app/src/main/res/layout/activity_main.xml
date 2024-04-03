@@ -8,21 +8,14 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/taskLinearLayout"
         android:layout_width="411dp"
         android:layout_height="612dp"
+        android:layout_marginStart="32dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <CheckBox
-            android:id="@+id/checkbox_task_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="Checkin' you out" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/addTaskButton"
@@ -35,6 +28,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/taskLinearLayout"
         app:srcCompat="@android:drawable/ic_menu_compass" />
 </androidx.constraintlayout.widget.ConstraintLayout>
